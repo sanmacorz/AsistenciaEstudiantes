@@ -4,7 +4,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Login {
-    // Generar contraseña hasheada
     private static String generateHash(String data, String algorithm) throws NoSuchAlgorithmException {
         MessageDigest digest;
         digest = MessageDigest.getInstance(algorithm);

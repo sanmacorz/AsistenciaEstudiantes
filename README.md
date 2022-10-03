@@ -1,18 +1,21 @@
-## Getting Started
+# Proyecto de asistencia estudiantes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+![GitHub](https://img.shields.io/github/license/sanmacorz/AsistenciaEstudiantes)
+![GitHub](https://img.shields.io/github/commit-activity/m/sanmacorz/AsistenciaEstudiantes)
 
-## Folder Structure
+Este proyecto es una herramienta para administrar la asistencia de los estudiantes en una institución educativa, para esto utiliza una base de datos relacional [MySQL](https://www.mysql.com/), a tráves de la librería [MySQL Connector](https://dev.mysql.com/downloads/connector/j/8.0.html), además de implementar el [patrón MVC](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador), el cuál es bastante utilizado en la [Programación Orientada a Objetos](https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos).
 
-The workspace contains two folders by default, where:
+### Configuración del proyecto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```bash
+git clone https://github.com/sanmacorz/AsistenciaEstudiantes.git
+cd AsistenciaEstudiantes/
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Uso del proyecto
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+cd src/
+javac */*.java
+java main.Main
+```

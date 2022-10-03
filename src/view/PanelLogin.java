@@ -13,9 +13,9 @@ public class PanelLogin extends JPanel {
     private JLabel lbTituloLogin;
     private JLabel lbUsuarioLogin;
     private JLabel lbContrasenaLogin;
-    private JTextField tfUsuarioLogin;
-    private JPasswordField pfContrasenaLogin;
-    public JButton btnAccionLogin;
+    private static JTextField tfUsuarioLogin;
+    private static JPasswordField pfContrasenaLogin;
+    public final JButton btnAccionLogin;
 
     public PanelLogin() {
         this.setLayout(null);
@@ -58,5 +58,13 @@ public class PanelLogin extends JPanel {
         btnAccionLogin.setBounds(340, 200, 180, 40);
         btnAccionLogin.setActionCommand("accionLogin");
         this.add(btnAccionLogin);
+    }
+
+    public static String getTfUsuario() {
+        return tfUsuarioLogin.getText();
+    }
+
+    public static String getPfContrasenaLogin() {
+        return String.valueOf(pfContrasenaLogin.getPassword());
     }
 }
