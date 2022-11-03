@@ -22,23 +22,12 @@ public class VentanaPrincipal extends JFrame {
     public PanelAsistencia miPanelAsistencia;
 
     public VentanaPrincipal() {
-        this.setTitle("Asistencia Estudiantes");
-        this.setSize(1920, 1080);
-        this.setResizable(true);
-        this.setLocationRelativeTo(null);
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setVisible(true);
-        this.setLayout(null);
-        this.getContentPane().setBackground(Color.decode("#8ba98a"));
-
         Border bordeNegro = BorderFactory.createLineBorder(Color.black, 3);
         miPanelDatosClase = new PanelDatosClase();
         miPanelDatosClase.setBounds(20, 20, 1880, 220);
         miPanelDatosClase.setBorder(bordeNegro);
-        this.add(miPanelDatosClase);
 
         mbBarra = new JMenuBar();
-        this.setJMenuBar(mbBarra);
 
         // Menú archivo
         mArchivo = new JMenu("Archivo");
@@ -70,6 +59,17 @@ public class VentanaPrincipal extends JFrame {
 
         miPanelAsistencia = new PanelAsistencia();
         miPanelAsistencia.setBounds(20, 270, 1880, 720);
+
+        this.setTitle("Asistencia Estudiantes");
+        this.setSize(1920, 1080);
+        this.setResizable(true);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setVisible(true);
+        this.setLayout(null);
+        this.getContentPane().setBackground(Color.decode("#8ba98a"));
+        this.add(miPanelDatosClase);
+        this.setJMenuBar(mbBarra);
         this.add(miPanelAsistencia);
     }
 }

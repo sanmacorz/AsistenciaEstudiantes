@@ -12,10 +12,6 @@ public class PanelListaEstudiantes extends JPanel {
         };
 
         public PanelListaEstudiantes() {
-                this.setLayout(null);
-                this.setBackground(Color.decode("#ffffff"));
-                this.setVisible(true);
-
                 JTable tTablaEstudiantes = new JTable(datosEstudiantes, nombresColumnas);
                 tTablaEstudiantes.getTableHeader().setReorderingAllowed(false);
                 tTablaEstudiantes.getTableHeader().setResizingAllowed(false);
@@ -23,6 +19,10 @@ public class PanelListaEstudiantes extends JPanel {
                 JScrollPane spTablaEstudiantes = new JScrollPane();
                 spTablaEstudiantes.setViewportView(tTablaEstudiantes);
                 spTablaEstudiantes.setBounds(0, 0, 1860, 690);
+
+                this.setLayout(null);
+                this.setBackground(Color.decode("#ffffff"));
+                this.setVisible(true);
                 this.add(spTablaEstudiantes);
 
                 // TODO Arreglar esta cosa!

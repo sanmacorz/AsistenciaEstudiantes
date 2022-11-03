@@ -6,10 +6,6 @@ import java.awt.Color;
 
 public class PanelAsistencia extends JPanel {
         public PanelAsistencia() {
-                this.setLayout(null);
-                this.setBackground(Color.decode("#b3d2b2"));
-                this.setVisible(true);
-
                 JPanel miPanelListaEstudiantes = new PanelListaEstudiantes();
                 JPanel miPanelListaEstudiantes2 = new JPanel();
                 JPanel miPanelListaEstudiantes3 = new JPanel();
@@ -29,6 +25,10 @@ public class PanelAsistencia extends JPanel {
                 tpPestanas.add("A2", miPanelListaEstudiantes6);
                 tpPestanas.add("A3", miPanelListaEstudiantes7);
                 tpPestanas.add("A4", miPanelListaEstudiantes8);
+
+                this.setLayout(null);
+                this.setBackground(Color.decode("#b3d2b2"));
+                this.setVisible(true);
                 this.add(tpPestanas);
         }
 }

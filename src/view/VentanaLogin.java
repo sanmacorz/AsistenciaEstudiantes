@@ -6,6 +6,9 @@ public class VentanaLogin extends JFrame {
     public PanelLogin miPanelLogin;
 
     public VentanaLogin() {
+        miPanelLogin = new PanelLogin();
+        miPanelLogin.setBounds(0, 0, 852, 480);
+
         this.setTitle("Login");
         this.setSize(852, 480);
         this.setResizable(false);
@@ -13,9 +16,6 @@ public class VentanaLogin extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setLayout(null);
-
-        miPanelLogin = new PanelLogin();
-        miPanelLogin.setBounds(0, 0, 852, 480);
         this.add(miPanelLogin);
     }
 }
