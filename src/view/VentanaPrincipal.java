@@ -24,7 +24,7 @@ public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal() {
         Border bordeNegro = BorderFactory.createLineBorder(Color.black, 3);
         miPanelDatosClase = new PanelDatosClase();
-        miPanelDatosClase.setBounds(20, 20, 1880, 220);
+        miPanelDatosClase.setBounds(20, 20, 1330, 220);
         miPanelDatosClase.setBorder(bordeNegro);
 
         mbBarra = new JMenuBar();
@@ -58,10 +58,10 @@ public class VentanaPrincipal extends JFrame {
         mbBarra.add(mAyuda);
 
         miPanelAsistencia = new PanelAsistencia();
-        miPanelAsistencia.setBounds(20, 270, 1880, 720);
+        miPanelAsistencia.setBounds(20, 270, 1330, 430);
 
         this.setTitle("Asistencia Estudiantes");
-        this.setSize(1920, 1080);
+        this.setSize(1720, 880);
         this.setResizable(true);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);

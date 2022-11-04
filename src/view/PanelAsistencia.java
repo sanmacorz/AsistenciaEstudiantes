@@ -16,7 +16,7 @@ public class PanelAsistencia extends JPanel {
                 JPanel miPanelListaEstudiantes8 = new JPanel();
                 JTabbedPane tpPestanas = new JTabbedPane();
 
-                tpPestanas.setBounds(10, 10, 1860, 700);
+                tpPestanas.setBounds(10, 10, 1310, 400);
                 tpPestanas.add("S1", miPanelListaEstudiantes);
                 tpPestanas.add("S2", miPanelListaEstudiantes2);
                 tpPestanas.add("S3", miPanelListaEstudiantes3);

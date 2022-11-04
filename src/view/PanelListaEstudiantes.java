@@ -18,7 +18,7 @@ public class PanelListaEstudiantes extends JPanel {
 
                 JScrollPane spTablaEstudiantes = new JScrollPane();
                 spTablaEstudiantes.setViewportView(tTablaEstudiantes);
-                spTablaEstudiantes.setBounds(0, 0, 1860, 690);
+                spTablaEstudiantes.setBounds(0, 0, 1310, 400);
 
                 this.setLayout(null);
                 this.setBackground(Color.decode("#ffffff"));
