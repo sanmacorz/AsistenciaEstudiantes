@@ -19,3 +19,7 @@ cd src/
 javac */*.java
 java main.Main
 ```
+
+## Diagrama de clases
+
+![Diagrama](docs/AsistenciaEstudiantes.png)
