@@ -68,6 +68,7 @@ public class VentanaPrincipal extends JFrame {
         this.add(miPanelDatosClase);
         this.setJMenuBar(mbBarra);
         this.add(miPanelAsistencia);
+        this.setBackground(Color.decode("#347bed"));
     }
 
     public static void crearDialogoAcercaDe() {
